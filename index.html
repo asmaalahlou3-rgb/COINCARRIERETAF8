@@ -3,176 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recrutement Immobilier Maroc | CoinCarrière Professionnel</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <title>CoinCarrière | Solutions RH Haute Performance pour l'Immobilier</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#001B2E', // Bleu nuit profond du logo
-                        coinBlue: '#0077B6', // Bleu clair du logo
-                        accent: '#b4dc02', // Lime de contraste
+                        primary: '#001B2E', // Bleu Nuit Logo
+                        secondary: '#0077B6', // Bleu Médium Logo
+                        accent: '#b4dc02', // Lime Action
+                        surface: '#F8FAFC',
                     },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
                 }
             }
         }
     </script>
     <style>
-        .hero-gradient { background: radial-gradient(circle at center, #002D4D 0%, #001B2E 100%); }
-        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .video-glow { box-shadow: 0 0 50px -12px rgba(180, 220, 2, 0.2); }
+        .gradient-bg { background: linear-gradient(135deg, #001B2E 0%, #003355 100%); }
     </style>
 </head>
-<body class="bg-white text-primary antialiased">
+<body class="bg-white text-primary font-sans antialiased">
 
-    <header class="hero-gradient text-white py-16 md:py-24 px-6 relative overflow-hidden">
-        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
-            <div class="text-center md:text-left">
-                <img src="COIN CARRIERE LOGO.jpg" alt="CoinCarrière" class="w-24 h-24 rounded-full border-2 border-white shadow-2xl mb-8 mx-auto md:mx-0 object-cover">
-                
-                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight uppercase tracking-tighter">
-                    Recrutez vos <span class="text-accent italic">Experts Immobiliers</span> <br>en 24h au Maroc
-                </h1>
-                <p class="text-lg md:text-xl opacity-90 mb-10 max-w-xl font-medium">
-                    Accédez instantanément au top 5% des agents et gestionnaires qualifiés à Casablanca, Rabat et Marrakech.
-                </p>
-                
-                <div class="flex flex-col items-center md:items-start gap-4">
-                    <a href="https://coincarriere.com/register?type=company" 
-                       class="bg-accent text-primary text-xl font-black px-12 py-6 rounded-2xl hover:scale-105 transition-transform shadow-[0_0_40px_rgba(180,220,2,0.4)] inline-block uppercase">
-                        Publier une offre gratuitement
-                    </a>
-                    <p class="text-xs opacity-70 flex items-center gap-2">
-                        <i class="fas fa-check-circle text-accent"></i> Inscription gratuite • Sans engagement
-                    </p>
-                </div>
+    <nav class="py-6 px-6 border-b border-slate-100 sticky top-0 bg-white/80 backdrop-blur-md z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="COIN CARRIERE LOGO.jpg" alt="Logo" class="w-12 h-12 rounded-full shadow-lg">
+                <span class="font-extrabold text-xl tracking-tighter uppercase">CoinCarrière</span>
             </div>
-            
-            <div class="hidden md:block relative">
-                <img src="image_1_1777399519328.png" alt="Tableau de bord CoinCarrière" class="rounded-[2.5rem] shadow-2xl border-8 border-white/5 object-cover">
+            <a href="#cta" class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-secondary transition-all">Accès Recruteur</a>
+        </div>
+    </nav>
+
+    <header class="gradient-bg text-white pt-20 pb-32 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-7xl font-extrabold mb-6 tracking-tight leading-[1.1]">
+                L'élite de l'immobilier <br><span class="text-accent italic">à portée de clic.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl mx-auto">
+                La plateforme de recrutement n°1 au Maroc dédiée exclusivement aux agences, promoteurs et gestionnaires de biens.
+            </p>
+
+            <div class="max-w-5xl mx-auto mt-16 relative">
+                <div class="absolute -top-10 -left-10 w-40 h-40 bg-accent/20 blur-3xl rounded-full"></div>
+                <div class="video-glow relative z-10 rounded-[2rem] overflow-hidden border-[6px] border-white/10 aspect-video bg-black">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/votre-id-video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-accent text-primary p-6 rounded-2xl shadow-2xl hidden md:block animate-bounce">
+                    <p class="font-black text-2xl">48h</p>
+                    <p class="text-[10px] uppercase font-bold tracking-widest">Délai moyen d'embauche</p>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="py-12 bg-slate-50 border-y border-slate-200">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-primary font-black text-2xl mb-8 uppercase tracking-tighter italic">+451 ENTREPRISES IMMOBILIÈRES NOUS FONT CONFIANCE</p>
-            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-20 opacity-40 grayscale text-4xl">
-                <i class="fab fa-houzz"></i> <i class="fas fa-city"></i> <i class="fas fa-building"></i> <i class="fas fa-hotel"></i>
-            </div>
+    <section class="py-12 bg-surface text-center">
+        <p class="text-slate-400 font-bold text-xs uppercase tracking-[0.3em] mb-8 text-center">Ils transforment leur sourcing avec nous</p>
+        <div class="container mx-auto px-6 flex flex-wrap justify-center gap-12 md:gap-24 opacity-50 grayscale">
+            <i class="fab fa-houzz text-4xl"></i>
+            <i class="fas fa-city text-4xl"></i>
+            <i class="fas fa-building text-4xl"></i>
+            <i class="fas fa-hotel text-4xl"></i>
+            <i class="fas fa-key text-4xl"></i>
         </div>
     </section>
 
-    <section class="py-20 container mx-auto px-6">
-        <h2 class="text-3xl font-black text-center mb-16 uppercase italic tracking-tight">Comment ça marche ?</h2>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 relative">
-            <div class="text-center group">
-                <div class="w-20 h-20 bg-white border-2 border-primary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition shadow-xl">1</div>
-                <h3 class="font-bold text-lg mb-2 uppercase">Publiez</h3>
-                <p class="text-slate-500 text-sm">Créez votre annonce ciblée secteur en moins de 2 minutes.</p>
-            </div>
-            <div class="text-center group">
-                <div class="w-20 h-20 bg-white border-2 border-primary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition shadow-xl">2</div>
-                <h3 class="font-bold text-lg mb-2 uppercase">Recevez</h3>
-                <p class="text-slate-500 text-sm">Notre algorithme vous envoie immédiatement les meilleurs profils.</p>
-            </div>
-            <div class="text-center group">
-                <div class="w-20 h-20 bg-white border-2 border-primary text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-6 group-hover:bg-primary group-hover:text-white transition shadow-xl">3</div>
-                <h3 class="font-bold text-lg mb-2 uppercase">Évaluez</h3>
-                <p class="text-slate-500 text-sm">Consultez les CV vérifiés et les tests d'aptitude immobiliers.</p>
-            </div>
-            <div class="text-center">
-                <div class="w-20 h-20 bg-accent text-primary rounded-full flex items-center justify-center text-3xl font-black mx-auto mb-6 shadow-xl">4</div>
-                <h3 class="font-bold text-lg mb-2 uppercase">Embauchez</h3>
-                <p class="text-slate-500 text-sm">Finalisez votre recrutement et développez votre activité.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 bg-primary text-white px-6">
+    <section class="py-24 px-6 bg-white">
         <div class="container mx-auto">
-            <h2 class="text-3xl font-black text-center mb-16 uppercase italic">L'avantage CoinCarrière</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
-                <div class="p-8 border border-white/10 rounded-3xl hover:bg-white/5 transition">
-                    <i class="fas fa-users text-accent text-3xl mb-6"></i>
-                    <h4 class="font-bold text-lg mb-3 uppercase">Base de données ciblée</h4>
-                    <p class="text-slate-400 text-sm">Accès à 10 000+ candidats exclusivement issus de l'immobilier au Maroc.</p>
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-xl">
+                    <h2 class="text-3xl md:text-5xl font-black uppercase leading-tight italic">Paroles de <br><span class="text-secondary">Professionnels.</span></h2>
                 </div>
-                <div class="p-8 border-2 border-accent/50 bg-accent/5 rounded-3xl">
-                    <i class="fas fa-bolt text-accent text-3xl mb-6"></i>
-                    <h4 class="font-bold text-lg mb-3 uppercase text-accent">Vitesse d'exécution</h4>
-                    <p class="text-slate-100 text-sm">Réduisez votre temps de sourcing de 70% grâce à notre IA de matching.</p>
-                </div>
-                <div class="p-8 border border-white/10 rounded-3xl hover:bg-white/5 transition">
-                    <i class="fas fa-shield-alt text-accent text-3xl mb-6"></i>
-                    <h4 class="font-bold text-lg mb-3 uppercase">Profils vérifiés</h4>
-                    <p class="text-slate-400 text-sm">Chaque profil est validé pour garantir son expérience terrain réelle.</p>
+                <div class="bg-accent/10 text-primary px-6 py-3 rounded-full font-bold text-sm">
+                    4.9/5 satisfaction moyenne
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="py-24 bg-slate-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-black text-center mb-16 uppercase italic">Ils recrutent sur CoinCarrière</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-[2rem] shadow-xl border border-slate-100 flex flex-col justify-between">
-                    <p class="text-slate-600 italic mb-6">"Pour nos lancements VEFA à Casa, il nous fallait des commerciaux formés. CoinCarrière a filtré l'élite en 24h."</p>
+                <div class="p-10 rounded-[3rem] bg-surface border border-slate-100 flex flex-col justify-between hover:shadow-2xl transition-all">
+                    <div class="mb-8">
+                        <div class="text-accent flex gap-1 mb-6 text-xs italic"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-slate-600 font-medium leading-relaxed">"Le gain de temps pour nos recrutements d'agents commerciaux à Casablanca est sans précédent. Nous ne recevons que des profils qui connaissent la VEFA et le terrain."</p>
+                    </div>
                     <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?u=1" class="w-12 h-12 rounded-full border-2 border-coinBlue">
-                        <div><p class="font-bold text-sm">Yassine B.</p><p class="text-[10px] uppercase font-bold text-coinBlue">Dir. Commercial • Promoteur</p></div>
+                        <img src="https://i.pravatar.cc/150?u=a1" class="w-14 h-14 rounded-2xl object-cover border-2 border-white shadow-md">
+                        <div><p class="font-extrabold text-sm">Omar El Fassi</p><p class="text-[10px] font-bold text-secondary uppercase tracking-widest">Dir. Commercial • Promotion Immo</p></div>
                     </div>
                 </div>
-                <div class="bg-primary p-8 rounded-[2rem] shadow-2xl text-white flex flex-col justify-between scale-105 z-10">
-                    <p class="text-slate-300 italic mb-6">"La spécialisation sectorielle est un gain de temps incroyable. On ne reçoit que des profils qui connaissent le terrain marocain."</p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?u=2" class="w-12 h-12 rounded-full border-2 border-accent">
-                        <div><p class="font-bold text-sm text-white">Meryem T.</p><p class="text-[10px] uppercase font-bold text-accent">Fondatrice • Luxury Real Estate</p></div>
+
+                <div class="p-10 rounded-[3rem] bg-primary text-white flex flex-col justify-between shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-8 opacity-10"><i class="fas fa-quote-right text-6xl text-white"></i></div>
+                    <div class="mb-8 relative z-10">
+                        <div class="text-accent flex gap-1 mb-6 text-xs italic"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-slate-200 font-medium leading-relaxed italic">"CoinCarrière comprend les spécificités du marché marocain. En 48h, nous avons trouvé notre nouveau responsable d'agence à Marrakech. La qualité des tests d'aptitude est remarquable."</p>
+                    </div>
+                    <div class="flex items-center gap-4 relative z-10">
+                        <img src="https://i.pravatar.cc/150?u=a2" class="w-14 h-14 rounded-2xl object-cover border-2 border-accent shadow-md">
+                        <div><p class="font-extrabold text-sm">Leila Mansouri</p><p class="text-[10px] font-bold text-accent uppercase tracking-widest">Fondatrice • Agence Immobilière de Luxe</p></div>
                     </div>
                 </div>
-                <div class="bg-white p-8 rounded-[2rem] shadow-xl border border-slate-100 flex flex-col justify-between">
-                    <p class="text-slate-600 italic mb-6">"Le pipeline visuel est intuitif. Collaborer avec mon équipe sur le choix des candidats n'a jamais été aussi simple."</p>
+
+                <div class="p-10 rounded-[3rem] bg-surface border border-slate-100 flex flex-col justify-between hover:shadow-2xl transition-all">
+                    <div class="mb-8">
+                        <div class="text-accent flex gap-1 mb-6 text-xs italic"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="text-slate-600 font-medium leading-relaxed">"Le pipeline de recrutement est ultra fluide. Collaborer avec mes directeurs de pôles sur les candidatures est devenu un plaisir. Une solution indispensable pour les RH."</p>
+                    </div>
                     <div class="flex items-center gap-4">
-                        <img src="https://i.pravatar.cc/150?u=3" class="w-12 h-12 rounded-full border-2 border-coinBlue">
-                        <div><p class="font-bold text-sm">Amine K.</p><p class="text-[10px] uppercase font-bold text-coinBlue">DRH • Cabinet Expertise Immo</p></div>
+                        <img src="https://i.pravatar.cc/150?u=a3" class="w-14 h-14 rounded-2xl object-cover border-2 border-white shadow-md">
+                        <div><p class="font-extrabold text-sm">Karim Bennani</p><p class="text-[10px] font-bold text-secondary uppercase tracking-widest">DRH • Cabinet Expertise Foncière</p></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-coinBlue text-white text-center">
-        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-12 font-black">
-            <div><div class="text-5xl text-accent mb-2 uppercase">24h</div><p class="text-[10px] uppercase opacity-70 tracking-widest">Délai de matching</p></div>
-            <div><div class="text-5xl text-accent mb-2 uppercase">92%</div><p class="text-[10px] uppercase opacity-70 tracking-widest">Taux de rétention</p></div>
-            <div><div class="text-5xl text-accent mb-2 uppercase">15k+</div><p class="text-[10px] uppercase opacity-70 tracking-widest">Candidats qualifiés</p></div>
-            <div><div class="text-5xl text-accent mb-2 uppercase">4.8/5</div><p class="text-[10px] uppercase opacity-70 tracking-widest">Note recruteurs</p></div>
+    <section class="py-24 bg-primary text-white px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-4xl font-black mb-8 uppercase italic italic tracking-tight">Pourquoi nous sommes <br><span class="text-accent italic">différents.</span></h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 bg-secondary rounded-xl flex-shrink-0 flex items-center justify-center font-black">01</div>
+                        <div><h4 class="font-bold text-lg uppercase mb-1">Base 100% Immo</h4><p class="text-slate-400 text-sm">15 000+ profils qualifiés (Agents, VEFA, Syndic, Notariat) déjà pré-testés.</p></div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 bg-secondary rounded-xl flex-shrink-0 flex items-center justify-center font-black">02</div>
+                        <div><h4 class="font-bold text-lg uppercase mb-1">IA de Matching</h4><p class="text-slate-400 text-sm">Notre algorithme identifie les candidats qui correspondent à vos mandats.</p></div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="w-12 h-12 bg-accent text-primary rounded-xl flex-shrink-0 flex items-center justify-center font-black">03</div>
+                        <div><h4 class="font-bold text-lg uppercase mb-1">Support Premium</h4><p class="text-slate-400 text-sm">Un consultant dédié pour vous accompagner sur vos recrutements stratégiques.</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 text-center">
+                    <p class="text-4xl font-black text-accent mb-2">15k</p>
+                    <p class="text-[9px] uppercase font-bold tracking-widest opacity-60">Talents Actifs</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 text-center">
+                    <p class="text-4xl font-black text-accent mb-2">92%</p>
+                    <p class="text-[9px] uppercase font-bold tracking-widest opacity-60">Rétention Embauche</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 text-center">
+                    <p class="text-4xl font-black text-accent mb-2">Cas</p>
+                    <p class="text-[9px] uppercase font-bold tracking-widest opacity-60">Siège Social</p>
+                </div>
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10 text-center">
+                    <p class="text-4xl font-black text-accent mb-2">24h</p>
+                    <p class="text-[9px] uppercase font-bold tracking-widest opacity-60">Premier Feedback</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="py-24 text-center px-6 bg-white">
-        <h2 class="text-4xl font-black mb-8 uppercase italic tracking-tight italic">Prêt à transformer vos recrutements ?</h2>
-        <a href="https://coincarriere.com/register?type=company" 
-           class="bg-accent text-primary text-2xl font-black px-16 py-8 rounded-3xl hover:scale-105 transition-transform shadow-2xl inline-block uppercase">
-            Démarrer gratuitement
-        </a>
-        <div class="mt-10 flex justify-center gap-8 text-slate-400 font-bold text-[10px] uppercase tracking-widest">
-            <span><i class="fas fa-lock mr-1"></i> 100% Sécurisé</span>
-            <span><i class="fas fa-bolt mr-1"></i> Activation immédiate</span>
+    <section id="cta" class="py-32 text-center px-6">
+        <div class="max-w-4xl mx-auto">
+            <img src="COIN CARRIERE LOGO.jpg" alt="Logo" class="w-20 h-20 rounded-full mx-auto mb-10 shadow-2xl">
+            <h2 class="text-4xl md:text-6xl font-black mb-10 leading-tight uppercase tracking-tighter">Prêt à transformer vos <br><span class="text-secondary italic">recrutements immobiliers ?</span></h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="https://coincarriere.com/register?type=company" class="bg-accent text-primary px-12 py-7 rounded-[2rem] font-black text-xl hover:scale-105 transition-all shadow-[0_20px_50px_rgba(180,220,2,0.4)] uppercase">Démarrer Gratuitement</a>
+            </div>
+            <p class="mt-12 text-slate-400 font-bold text-[10px] uppercase tracking-[0.4em] flex justify-center gap-8">
+                <span><i class="fas fa-lock text-secondary mr-2"></i> 100% Sécurisé</span>
+                <span><i class="fas fa-bolt text-secondary mr-2"></i> Activation Immédiate</span>
+            </p>
         </div>
     </section>
 
-    <footer class="py-12 bg-primary text-slate-500 text-center text-xs">
-        <p>© 2026 CoinCarrière Maroc • Solutions RH Immobilier Professionnelles</p>
+    <footer class="py-12 bg-surface text-slate-400 text-center border-t border-slate-100">
+        <p class="text-[10px] font-bold uppercase tracking-widest">© 2026 CoinCarrière Maroc • L'expertise RH Immobilière</p>
     </footer>
 
 </body>
 </html>
-          
-
